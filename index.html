@@ -63,7 +63,7 @@
             document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°F";
             document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
             document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
-
+            // Use assignment operator not equality operator when setting weatherIcon.src value.
             if(data.weather[0].main == "Clouds"){
                 weatherIcon.src = "images/clouds.png";
             }
